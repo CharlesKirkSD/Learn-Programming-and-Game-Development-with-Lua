@@ -1,16 +1,16 @@
 -- while loop example
 
 local score = 0
-local gameIsOver = false
+local gameIsRunning = true
 
 function incrementScore()
   score = score + 1
   if score >= 6 then
-    gameIsOver = true
+    gameIsRunning = false
   end
 end
 
-while gameIsOver == false do
+while gameIsRunning do
   incrementScore()
   print("Game is running, the score is: " .. score)
 end
