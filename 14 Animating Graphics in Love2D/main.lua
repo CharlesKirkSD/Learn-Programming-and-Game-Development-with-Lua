@@ -15,7 +15,7 @@ function love.update(dt)
   linePosX1 = linePosX1 + moveAmount * dt
   linePosX2 = linePosX2 + moveAmount * dt
   
-  character:move(moveAmount * dt, moveAmount * dt)
+  character.move(moveAmount * dt, moveAmount * dt)
 end
 
 function love.draw()
